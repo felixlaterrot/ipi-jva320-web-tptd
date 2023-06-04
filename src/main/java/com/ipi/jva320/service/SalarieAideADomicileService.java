@@ -33,6 +33,11 @@ public class SalarieAideADomicileService {
     public SalarieAideADomicileService() {
     }
 
+    public void ajoutSalarie(SalarieAideADomicile salarieAideADomicile) {
+        salarieAideADomicileRepository.save(salarieAideADomicile);
+    }
+
+
     /**
      * @return le nombre de salariés dans la base
      */
@@ -279,5 +284,4 @@ public class SalarieAideADomicileService {
 
         salarieAideADomicileRepository.save(salarieAideADomicile);
     }
-
 }
