@@ -54,7 +54,7 @@
         <span th:each="sasa : ${salarie}">
 
           <tr>
-            <th scope="row">1</th>
+            <th scope="row" th:text="${sasa.getId()}"></th>
             <td th:text="${sasa.getNom()}"></td>
             <td><a href="/salaries/aide/2" class="btn btn-primary ember-view">Détail</a></td>
           </tr>
